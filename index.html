@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <header class="site-header">
       <nav class="nav-inner">
@@ -39,54 +41,197 @@
           </button>
         </div>
 
-        <button class="btn-hamburguer">
+        <button class="btn-hamburger">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </nav>
     </header>
+
     <main>
-  <section class="hero-section" id="inicio">
-    <div class="hero-container">
-      <div class="hero-titulo-wrapper">
-        <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
-      </div>
+      <section class="hero-section" id="inicio">
+        <div class="hero-container">
+          <div class="hero-titulo-wrapper">
+            <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
+          </div>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-valor">500 Comentários</span>
-          <span class="stat-descricao">Interação ativa</span>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-valor">500 Comentários</span>
+              <span class="stat-descricao">Interação ativa</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-valor">10k Visualizações</span>
+              <span class="stat-descricao">Alcance global</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="stat-item">
-          <span class="stat-valor">10k Visualizações</span>
-          <span class="stat-descricao">Alcance global</span>
+      <!-- Seção de conteúdo principal: grade de artigos e barra lateral (Prática 03) -->
+      <section class="main-section">
+        <div class="content-container">
+          <!-- grade de artigos -->
+          <div class="posts-container">
+            <article class="post-card">
+              <img
+                src="./img/post_1.webp"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">12 AGO 2026</span>
+                <h2>Tecnologia após o surgimento da IA</h2>
+                <p>
+                  Após a IA os tempos continuam os mesmos? Saiba tudo que mudou e 
+                  o que continua funcionando nos tempos modernos após a inserção das 
+                  inteligências artificiais. 
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+            <article class="post-card">
+              <img
+                src="./img/post_2.webp"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">26 SET 2025</span>
+                <h2>Como a IA pode revolucionar o mundo dos jogos</h2>
+                <p>
+                  A IA pode mudar o cenário dos games? saiba como ela pode auxiliar 
+                  na resolução e novidades na hora de jogar. 
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+            <article class="post-card">
+              <img
+                src="./img/post_3.jpeg"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">03 JUL 2026</span>
+                <h2>É possível ter uma rede de contatos no ambiente virtual?</h2>
+                <p>
+                  Com o avanço de tecnologias as redes de comunicação ficaram ainda maiores. 
+                  Mas será se é possível fidelizar amizades com pessoas á distância?
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+            <article class="post-card">
+              <img
+                src="./img/post_4.webp"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">28 AGO 2026</span>
+                <h2>O uso excessivo de IA nas escolas</h2>
+                <p>
+                  A IA apesar de ser inovadora tem causado muitos malefícios 
+                  no ambiente estudantil, o uso abusivo tem trazido sérios prejuizos 
+                  na vida acadêmica. 
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+            <article class="post-card">
+              <img
+                src="./img/post_5.jpg"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">27 AGO 2026</span>
+                <h2>O mundo virtual</h2>
+                <p>
+                  A rápida conexão de pessoas após os avanços tecnológicos 
+                  tem trazido ainda mais comodidade a populações que conseguem 
+                  fácil comunicação ao redor de todo o mundo. 
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+            
+          </div>
+
+          <!-- barra lateral -->
+          <aside class="side-bar">
+            <div class="form-container">
+              <h3>Fique por dentro</h3>
+              <p>
+                Receba curadorias exclusivas sobre design e tecnologia
+                diretamente no seu e-mail
+              </p>
+
+              <input type="email" name="email" id="email" />
+              <button class="btn-email">Inscrever-se</button>
+            </div>
+
+            <div class="categories-container">
+              <h3>Categorias</h3>
+
+              <ul>
+                <li>
+                  <span class="title-category">Design</span>
+                  <span class="badge-category">24</span>
+                </li>
+                <li>
+                  <span class="title-category">Tecnologia</span>
+                  <span class="badge-category">18</span>
+                </li>
+                <li>
+                  <span class="title-category">Carreira</span>
+                  <span class="badge-category">12</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="editor-container">
+              <img src="" alt="Foto do editor chefe" />
+              <h4>Beatriz Cordeiro Noronha</h4>
+              <span>Editor Chefe</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                quo, laboriosam eveniet impedit amet, a nesciunt explicabo.
+              </p>
+            </div>
+          </aside>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <a href="./index.html" class="footer-brand">BlogTech</a>
+
+        <nav class="footer-nav" aria-label="Links institucionais">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <p class="footer-copy">
+          © 2026 BlogTech. Todos os direitos reservados.
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Seção de conteúdo principal: grade de artigos e barra lateral (Prática 03) -->
-</main>
-<footer class="site-footer">
-  <div class="footer-container">
-    <a href="./index.html" class="footer-brand"> BlogTech </a>
+    <script>
+      let menu = document.querySelector(".btn-hamburger");
+      let nav = document.querySelector(".nav-inner");
 
-    <nav class="footer-nav">
-      <a href="#">Privacidade</a>
-      <a href="#">Termos</a>
-      <a href="#">Contato</a>
-    </nav>
-
-    <p class="footer-copy">© 2026 BlogTech. Todos os direitos reservados.</p>
-  </div>
-</footer>
-  <script> 
-    let menu = document.querySelector(".btn-hamburguer");
-    let nav = document.querySelector(".nav-inner");
-
-    menu.addEventListener("click", () => {
-      nav.classList.toggle("open"); 
-    });
-  </script>
+      menu.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>

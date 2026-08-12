@@ -1,38 +1,42 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #0e0e0e;
-  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
   min-height: 100vh;
 }
 
 :root {
   --color-bg: #0e0e0e;
-  --color-surface: rgba(26, 25, 25, 0.80);
+  --color-surface: rgba(26, 25, 25, 0.8);
   --color-primary: #a3a6ff;
   --color-text: #ffffff;
   --color-text-muted: #adaaaa;
 
   --nav-height: 64px;
   --nav-padding: 2rem;
-  --base-font: "Inter", sans-serif;
---max-width-nav: 1400px;
---max-width-content: 1280px;
---border-radius: 0.5rem;
 
---color-border: rgba(72, 72, 71, 0.3);
---color-divisor: rgba(72, 72, 71, 0.15);
-}
+  /* Prática 02 */
+  --base-font:
+    "Inter", sans-serif; /* ← NOVO: define a fonte base para todas as seções */
+  --max-width-nav: 1400px; /* ← NOVO: largura máxima da barra de navegação */
+  --max-width-content: 1280px; /* ← NOVO: largura máxima das seções de conteúdo */
+  --border-radius: 0.5rem; /* ← NOVO: borda arredondada para botões e elementos de destaque */
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-text);
+  --color-border: rgba(
+    72,
+    72,
+    71,
+    0.3
+  ); /* ← NOVO: cor de borda suave para elementos como botões e cards */
+  --color-divisor: rgba(72, 72, 71, 0.15);
 }
 
 .site-header {
@@ -49,7 +53,6 @@ body {
   width: var(--max-width-nav);
   margin: 0 auto;
 }
-
 
 .nav-links {
   display: flex;
@@ -97,13 +100,14 @@ body {
   cursor: pointer;
 }
 
-.btn-hamburguer {
-  /*display: none;*/
+.btn-hamburger {
+  display: none;
   background: none;
   border: none;
   color: var(--color-text);
   cursor: pointer;
 }
+
 /* Media Query aplicada a dispositivos móveis (de até 600px) */
 @media (max-width: 600px) {
   .site-header {
@@ -115,21 +119,28 @@ body {
     align-items: flex-start;
     padding: 1rem;
     gap: 1rem;
+    position: relative;
   }
 
-  .nav-links, .nav-actions{
+  .btn-hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+  }
+
+  .nav-links,
+  .nav-actions {
     display: none;
   }
 
-/* espaço significa seletor de descendência */
   .open.nav-inner .nav-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .open.nav-inner .nav-actions{
+  .open.nav-inner .nav-actions {
     display: block;
   }
-
 }
